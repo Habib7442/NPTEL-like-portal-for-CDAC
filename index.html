@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>NPTEL</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">NPTEL</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Initiative
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Local Chapter</a></li>
+                <li><a class="dropdown-item" href="#">Industry Associates</a></li>
+                <li><a class="dropdown-item" href="#">Translation</a></li>
+                <li><a class="dropdown-item" href="#">Gate Preparation</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Programs
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Nptel Courses</a></li>
+                <li><a class="dropdown-item" href="#">Medical Courses</a></li>
+                <li><a class="dropdown-item" href="#">SWAYAM & NPTEL</a></li>
+                <li><a class="dropdown-item" href="#">Domains</a></li>
+                <li><a class="dropdown-item" href="#">NPTEL+</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">NPTEL STARS</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">About us</a></li>
+                <li><a class="dropdown-item" href="#">Merchendise</a></li>
+                <li><a class="dropdown-item" href="#">Special lecture series</a></li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                <li><a class="dropdown-item" href="#">Feedback</a></li>
+              </ul>
+            </li>
+             
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <section class="input">
+        
+        <div class="searchforCourses">
+            <img class="icon" src="/images/icon.png" alt="">
+            <input id="courses" onclick="changeBorder()" type="text" placeholder="Search for courses">
+        </div>
+        <div class="searchbyInstructor">
+            <img class="icon" src="/images/icon.png" alt="">
+            <input id="instructor" onclick="changeBorder()" type="text" placeholder="Search by instructor">
+        </div>
+
+        <div class="dropdown mx-3 dropdowns">
+            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #fff;">
+              Dicipline
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Aerospace Engineering</a></li>
+              <li><a class="dropdown-item" href="#">Biotechnology</a></li>
+              <li><a class="dropdown-item" href="#">Chemical Engineering</a></li>
+              <li><a class="dropdown-item" href="#">Chemistry And Biochemistry</a></li>
+              <li><a class="dropdown-item" href="#">Civil Engineering</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown mx-3 dropdowns">
+            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #fff;">
+              Institute
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">IIT Bombay</a></li>
+              <li><a class="dropdown-item" href="#">IIT Guwahati</a></li>
+              <li><a class="dropdown-item" href="#">IIT Kanpur</a></li>
+              <li><a class="dropdown-item" href="#">IIT Kharagpur</a></li>
+              <li><a class="dropdown-item" href="#">IIT Madras</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown mx-3 dropdowns">
+            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #fff;">
+              Course type
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Video</a></li>
+              <li><a class="dropdown-item" href="#">Web</a></li>
+              
+            </ul>
+          </div>
+        
+    </section>
+
+    <div class="container">
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p class="branch">Aerospace Engineering</p>
+            <p class="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p id="branch">Aerospace Engineering</p>
+            <p id="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p id="branch">Aerospace Engineering</p>
+            <p id="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p id="branch">Aerospace Engineering</p>
+            <p id="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p id="branch">Aerospace Engineering</p>
+            <p id="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p id="branch">Aerospace Engineering</p>
+            <p id="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p id="branch">Aerospace Engineering</p>
+            <p id="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p id="branch">Aerospace Engineering</p>
+            <p id="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p id="branch">Aerospace Engineering</p>
+            <p id="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+        <div id="box">
+            <div id="inner-content">
+            <img id="arrow-icon" src="/images/next.png" alt="">
+            <h6>NOC:Space Flight Mechanics</h6>
+            <p id="branch">Aerospace Engineering</p>
+            <p id="teachers-name">Dr. Manoranjan Sinha<br>IIT Kharagpur</p>
+            </div>
+            <button class="btn-enroll">Enroll Now</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
