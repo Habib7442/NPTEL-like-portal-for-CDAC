@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+/* navbar */
+.navbar{
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+/* swayam */
+
+.signIn{
+    height: 140px;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-info{
+    margin: 70px 0 0 10px;
+    padding: 5px 10px;
+}
+
+/* swayamSection-1 */
+
+.swayamSection-1{
+    height: 250px;
+    background: #003366;
+}
+
+.swayamSection-1 p,h6{
+    color: #fff;
+}
+
+label{
+    position: absolute;
+}
+
+.swayam-1{
+    margin: 70px 0 0 80px;
+}
+
+.swayamLabel{
+    margin: 150px 0 0 -55px;
+}
+
+video{
+    position: absolute;
+    margin: 60px 0 0 100px;
+}
+
+/* swayamSection-2 */
+
+.swayamSection-2{
+    display: flex;
+}
+
+/* firstcontent */
+
+.firstContent{
+    width: 22%;
+    height: 100vh;
+}
+
+.firstContent img{
+    margin: 30px 0 0 75px;
+}
+
+#catalog{
+    margin: 10px 80px;
+    padding:5px 15px;
+    font-size: 8px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+
+#catalog:hover{
+    background-color: antiquewhite;
+}
+
+/* secondcontent */
+
+.secondContent{
+    width: 50%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px 0 0 0;
+}
+
+.innerContent-1{
+    margin: 30px 15px;
+}
+
+/* thirdcontent */
+
+.thirdContent{
+    width: 28%;
+}
+
+.innerContent-2{
+    margin: 30px 15px;
+}
+
+/* swayamSection-3 */
+
+.swayamSection-3{
+    height: 100px;
+}
+.innerContent-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerContent-3 a{
+    color: black;
+}
+
+i{
+    margin: 40px 10px;
+}
+
+.swayamSection-4{
+    height: 30px;
+    background: #666666;
+}
+
+.innerContent-4,.innerContent-5{
+    margin: 0 30px;
+}
+.innerContent-4 a{
+    color: #fff;
+}
+
+.swayamSection-5{
+    background-color: black;
+    color: #fff;
+}
+
+
