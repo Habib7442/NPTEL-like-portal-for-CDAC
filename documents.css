@@ -19,14 +19,14 @@ h4{
     height: 20rem;
     background: linear-gradient(to right, #a1ffce, #faffd1);
     border-radius: 8px;
-    opacity: 0.5;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .inner-div:hover{
-    opacity: 1;
+    background: linear-gradient(to right, #4ac29a, #bdfff3);
     cursor: pointer;
-    transition: 0.4s;
+    box-shadow: none;
+    transition: 0.5s;
 }
 
 .tab-pane a{

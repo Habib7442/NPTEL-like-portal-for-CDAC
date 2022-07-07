@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,52 +9,64 @@
 body{
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #00416a, #e4e5e6);
 }
 
 .container{
     display: flex;
+    width: 100vw;
+    height: 60vh;
+    background: #E2E2E2;
+    border-radius: 10px;
 }
 
-.loginWithAccounts{
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(to right, #ffefba, #ffffff); 
-    margin: 10% 0 0 20%;
-    border-radius: 12%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed rgb(28, 218, 190);
-}
-
-i{
-    padding: 20px;
-    color: black;
-}
-
-.loginWithUsername {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(to right, #ffefba, #ffffff); 
-    margin: 10% 0 0 10%;
-    border-radius: 12%;
+.socialLogIn{
+    width: 40vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed rgb(28, 218, 190);
+    place-items: center;
+    margin-top: 20px;
+    
 }
 
-.input-group{
-    padding: 10px;
-}
-
-.heading h2{
+h3{
     text-align: center;
-    margin-top: 40px;
-    color: aquamarine;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 10px;
 }
+
+.socialLogIn >.input-group{
+    margin-left: 30px;
+}
+
+.form-control{
+    margin: 0 30px;
+}
+
+.usernameLogIn{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.usernameLogIn > .input-group{
+    margin-left: 30px;
+}
+
+.h5 h5{
+    margin: 15vh 5px 0 5px;
+
+}
+
+.flex-nowrap .form-control{
+    width: 50px;
+}
+
+
+
+
 

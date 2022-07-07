@@ -7,41 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d85dc700c7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="login.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Login</title>
 </head>
 
 <body>
-
-    <div class="heading">
-        <h2>CDAC Online Course Certification Exams</h2>
+    <div class="title">
+        <h3>NPTEL Online Course Certification Exams</h3>
+    </div>
+    <div class="alert">
+        <div class="alert alert-danger" role="alert">
+            Note: <br>
+            Please make sure that you login using the same email id you had used while enrolling (joining) to the course.
+        </div>
     </div>
     <div class="container">
-        <div class="loginWithAccounts">
 
-            <p class="font-monospace" style="position: absolute; margin-top:-160px;">Login With</p>
-
-            <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
-            <a href=""><i class="fa-brands fa-google fa-2x"></i></a>
-            <a href=""><i class="fa-brands fa-microsoft fa-2x"></i></a>
-
+        <div class="socialLogIn">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><img src="/images/microsofticon.svg"
+                        style="height: 25px;" alt="icon"></span>
+                <input type="text" class="form-control " aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" placeholder="Microsoft Account">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><img src="/images/googleicon.svg"
+                        style="height: 25px;" alt="icon"></span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" placeholder="Google">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><img src="/images/fbicon.svg"
+                        style="height: 25px;" alt="icon"></span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" placeholder="Facebook">
+            </div>
         </div>
 
-        <div class="loginWithUsername">
+        <div class="h5">
+            <h5>OR</h5>
+        </div>
+
+        <div class="usernameLogIn">
             <div class="input-group flex-nowrap">
+                <!-- <label for="username">Username</label> -->
                 <span class="input-group-text" id="addon-wrapping">@</span>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username"
                     aria-describedby="addon-wrapping">
             </div>
             <div class="input-group flex-nowrap">
+                <!-- <label for="username">Username</label> -->
                 <span class="input-group-text" id="addon-wrapping">@</span>
-                <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Username"
                     aria-describedby="addon-wrapping">
             </div>
 
-            <button type="button" class="btn btn-light">Sign in</button>
-            <a href="">Fogot your password ?</a><br>Or
-            <button type="button" class="btn btn-light my-2">Sign up</button>
+            <button type="button" class="btn btn-outline-success">Sign in</button>
+            <a href="forgot_password.html">Forgot your password ?</a>
+            <h6>OR</h6>
+            <h6>Don't have an account ? <a href="#">Sign up now</a></h6>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6t

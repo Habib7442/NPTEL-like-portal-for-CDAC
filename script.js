@@ -3,31 +3,37 @@ function changeBorder() {
   document.getElementById("instructor").style.border = "1px solid #80a8fc";
 }
 
-function getSearch() {
-  var requestOptions = {
-    method: "GET",
-    redirect: "follow",
-  };
+const searchCourses = () => {
+  let filter = document.getElementById("courses").value.toUpperCase();
+  let div = document.getElementById("container");
+  let courseName = div.getElementsByClassName("header");
+  let box = document.getElementsByClassName("box");
 
-  var coursename = {
-    method: "GET",
-    redirect: "follow",
-  };
+  for (let i = 0; i < courseName.length; i++) {
+    let a = courseName[i].getElementsByTagName("h6")[0];
+    let nameValue = a.textContent || a.innerHTML;
 
-  const searchbox = document.getElementById("courses").value;
+    if (nameValue.toUpperCase().indexOf(filter) > -1) {
+      courseName[i].style.display = "";
+    } else {
+      box[i].style.display = "none";
+    }
+  }
+};
 
-  fetch(
-    "https://www.backend.cf/courses/:coursename",
-    { mode: "no-cors" },coursename,
-    requestOptions
-  )
-    .then((response) => response.text())
-    .then((result) => {
-      console.log(result.method);
-    })
-    .catch((error) => {
-      console.log("error", error);
-    });
-}
+const searchInstructor = () => {
+  let filter = document.getElementById("instructor").value.toUpperCase();
+  let div = document.getElementById("container");
+  let courseName = div.getElementsByClassName("instructorName");
+  let box = document.getElementsByClassName("box");
+  for (let i = 0; i < courseName.length; i++) {
+    let a = courseName[i].getElementsByTagName("p")[0];
+    let nameValue = a.textContent || a.innerHTML;
 
-getSearch();
+    if (nameValue.toUpperCase().indexOf(filter) > -1) {
+      courseName[i].style.display = "";
+    } else {
+      box[i].style.display = "none";
+    }
+  }
+};

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+
+img{
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* img:hover{
+    transform: scale(1.5);
+} */
+
+.addToCart{
+    margin-top: 20px;
+    width: 40vw;
+    height: 100vh;
+}
+
+.privacy-policy{
+    text-align: center;
+    padding: 50px;
+}
+
+.content{
+    margin-left: 200px;
+}
+
