@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(205, 231, 247, 0.963);
+}
+
+.heading{
+    background-color: rgb(29, 29, 109);
+    border: 2px solid rgb(29, 29, 109);
+    color: white;
+    border-radius: 10px 10px 30px 30px;
+    padding: 40px;
+    width: 730px;
+    margin: 8px;
+    text-align: center;
+    font-size: large;
+}
+
+form{
+    display: flex;
+    padding-left: 80px;
+    flex-direction: column;
+    justify-content: center;
+    width: 650px;
+    padding: 60px;
+    font-size: medium;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: white;
+    padding-left: 100px;
+}
+
+
+#email, #name, #dob, #addr, #city, #pin, #state, #country, #num, #altNum, select{
+    width: 90%;
+    padding: 4px;
+    font-size: medium;
+    background-color: rgba(214, 224, 225, 0.573);
+    border: none;
+    border-bottom: 2px solid rgb(29, 29, 109);
+}
+
+#addr{
+    margin-bottom: 20px;
+}
+
+.guidelines, .photo{
+    background-color: rgb(255, 232, 205);
+    padding: 20px;
+    border-left: 4px solid rgb(29, 29, 109);
+    width: 550px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.infoBox{
+    background-color: rgb(187, 228, 255);
+    padding: 10px;
+    width: 570px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border-left: 4px solid rgb(29, 29, 109);
+}
+
+.PE, .examO, .role, .disab, .category, .gender{
+    padding: 5px;
+    border-left: 4px solid rgb(29, 29, 109);
+    border-right: 4px solid rgb(29, 29, 109);
+    margin-bottom: 5px;
+    background-color: rgba(214, 224, 225, 0.573);
+    width: 575px;
+    margin-bottom: 30px;
+}
+
+.upload{
+    margin: 10px;
+    padding: 4px;
+    background-color: rgb(255, 232, 205);
+    color: rgb(29, 29, 109);
+}
+
+label{
+    margin-right: 80px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 580px;
+}
+
+button{
+    margin: 20px;
+    padding: 6px;
+    width: 200px;
+    background-color: rgb(29, 29, 109);
+    color: white;
+    border: 2px solid rgb(29, 29, 109);
+    font-size: medium;
+    border-radius: 30px;
+}
+
+select{
+    margin-bottom: 30px;
+    width: 595px;
+}
+
+.back{
+    list-style: none;
+    border: 1px solid rgba(205, 231, 247, 0.963);
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #0c1554, #5dbcdf);
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    width: 100px;
+    padding: 6px;
+    text-align: center;
+}
+
+.back a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.back:hover{
+    background-image: linear-gradient(to right, #5dbcdf, #0c1554);
+}

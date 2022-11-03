@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="courseEnrollmentCSS.css">
+</head>
+<body>
+    <div class="heading">
+        <h2>Enrollment Form</h2>
+    </div>
+    <form action="">
+        <div class="guidelines">
+            <h4>Guidelines</h4>
+            <p>All images must be between 50-150 KB and in .JPG format.</p>
+            <p>Address field(s) should not be empty.</p>
+            <ul>The following fields will not be editable once saved:
+                <li>Do you come under SC/ST category?</li>
+                <li>Are you a person with disabilities?</li>
+                <li>Are you a person with disabilities above 40%?</li>
+                <li>What is your role?</li>
+                <li>Are you writing the exam in Outside India?</li>
+            </ul>
+            <p>Fields marked with * are mandatory.</p>
+        </div>
+
+        Email*: <br>
+        <input type="email" id="email"><br>
+        <div class="infoBox">
+            Your email id must be unique and is your identity.
+        </div>
+        Name*: <br>
+        <input type="text" id="name"><br>
+        <div class="infoBox">
+            Your name entered here will appear in your certificate. No further changes will be entertained.
+        </div>
+        Date of Birth*: <br>
+        <input type="date" id="dob"><br>
+        <div class="infoBox">
+            Date of Birth will be verified against a Govt. issued id card at the venue of the exam. 
+        </div>
+        Address Line 1*:<br>
+        <textarea id="addr" cols="30" rows="5"></textarea><br>
+        <div class="infoBox">
+            All postal communication will use this address only. No further changes will be entertained. 
+        </div>
+        City*:<br>
+        <input type="text" id="city"><br>
+        Pincode*:<br>
+        <input type="number" id="pin"><br>
+        State*:<br>
+        <input type="text" id="state"><br>
+        Country*:<br>
+        <input type="text" id="country"><br>
+        Mobile Number*: <br>
+        <input type="number" id="num"><br>
+        <div class="infoBox">
+            The entered mobile number will be used for sending important SMS regarding exam.
+        </div>
+        Alternate Mobile Number*:<br>
+        <input type="number" id="altNum"><br>
+        <div class="infoBox">
+            This mobile number will be used as an alternative.
+        </div>
+        Gender*:<br>
+        <div class="gender">
+            
+            <input type="radio" id="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female">
+            <label for="female">Female</label>
+            <input type="radio" id="others">
+            <label for="others">Others</label><br>
+        </div>
+
+        <div class="photo">
+            <h4>Guidelines for Passport Size Photo, Signature Image, ID Proof</h4>
+            <ul>
+                <li>Face should occupy about 50% of the area in the photograph, with full face looking directly into the camera.</li>
+                <li>Maximum photo size is 150kb and for PDF it is 2mb.</li>
+                <li>SELFIES, BLURRED IMAGES, PHOTOS OF SOMEONE ELSE, DUMMY PHOTOS, FULL SIZED PHOTOS, etc are not allowed.</li>
+            </ul>
+        </div>
+        Passport Size Photo*:<br>
+        <div data-text="Upload">
+            <input class="upload" type="file" id="photo" accept="image/jpg">
+        </div>
+        Signature Image*:<br>
+        <div data-text="Upload">
+            <input type="file" class="upload" id="sign" accept="image/jpg">
+        </div>
+        ID Proof*:<br>
+        <div data-text="Upload">
+            <input class="upload" type="file" id="id" accept="image/jpg">
+        </div>
+        <div class="infoBox">
+            Aadhar Card/ Voter's ID/ Driving License
+        </div>
+        Do you come under SC/ST category?*<br>
+        <div class="category">
+            
+            <input type="radio" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no">
+            <label for="no">No</label>
+           
+        </div>
+        <div class="infoBox">
+            Applicants who claim to be in any of the category SC/ST have to submit valid document issued by competent authority, to qualify for the reduced fee. 
+        </div>
+
+        Are you a person with disabilities above 40%?*<br>
+        <div class="disab">
+            
+            <input type="radio" id="yesD">
+            <label for="yesD">Yes</label>
+            <input type="radio" id="noD">
+            <label for="noD">No</label><br>
+        </div>
+
+        What is your role?*<br>
+        <div class="role">
+           
+            <input type="radio" id="student">
+            <label for="student">Student</label>
+            <input type="radio" id="faculty">
+            <label for="faculty">Faculty</label>
+            <input type="radio" id="employee">
+            <label for="employee">Employee</label>
+            <input type="radio" id="otherR">
+            <label for="otherR">Others</label>
+        </div>
+        Are you writing the exam in Outside India?*<br>
+        <div class="examO">
+            
+            <input type="radio" id="yesE">
+            <label for="yesE">Yes</label>
+            <input type="radio" id="noE">
+            <label for="noE">No</label><br>
+        
+        </div>
+        <div class="infoBox">
+            We will accept below documents only: Residence proof(Internationally recognized)- Residence Card or Driving License with Address/Bank Statement(with address) - Transaction details can be masked/Utility Bill(Telephone Bill, Electricity Bill, etc.) Citizenship ID Proof - Recent visa page in your passport with date stamp/citizenship document
+        </div>
+        
+        How did you know about these courses?*
+        <select id="source">
+            <option value="">Select a value</option>
+            <option value="">College</option>
+            <option value="">Friends</option>
+            <option value="">Internet</option>
+            <option value="">Social Media</option>
+            <option value="">Others</option>
+        </select>
+
+        Are you okay if we share your details with potential employers?*<br>
+        <div class="PE">
+            
+            <input type="radio" id="yesPE">
+            <label for="yesPE">Yes</label>
+            <input type="radio" id="noPE">
+            <label for="noPE">No</label><br>
+        </div>
+        
+        What is your motivation to do this course?*<br>
+        <select id="motive">
+            <option value="">Select a value</option>
+            <option value="">For getting a job/internship</option>
+            <option value="">Preparing for competitive exams</option>
+            <option value="">For research purposes</option>
+            <option value="">To update myself with knowledge in this field</option>
+            <option value="">To learn about how MOOCs work</option>
+            <option value="">Other</option>
+        </select>
+        <div class="button">
+            <button type="submit">Save</button>
+        </div>
+    </form>
+
+    <ul>
+        <li class="back"><a href="patneredCourses.html">Back</a></li>
+    </ul>
+</body>
+</html>
