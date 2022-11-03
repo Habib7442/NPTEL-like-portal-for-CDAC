@@ -16,7 +16,7 @@ fetch(`https://www.backend.cf/api/courses/pgdiploma/`)
         <p class="card-text teachers-name">${values.pgdiploma_course_faculty}</p>
         </div>
         <br>
-        <a href=${values.pgdiploma_syllabus} class="card-link btn btn-outline-dark">
+        <a href="https://www.backend.cf/api/${values.pgdiploma_syllabus}" class="card-link btn btn-outline-dark">
           Syllabus
         </a>
         
